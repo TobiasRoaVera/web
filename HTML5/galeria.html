@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="../CSS3/style4.css"> <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes</h1>
+    </header>
+    <a href="index1.html" class="back-button">Volver a Casa</a>
+
+    <!-- Texto estilizado -->
+    <div class="intro-text">
+        <p>¡Tú puedes ser uno de estos hombres si compras nuestros productos o contratas nuestros servicios!</p>
+    </div>
+
+    <!-- Carrusel de imágenes -->
+    <div class="carousel">
+        <img src="../imgs/businessman-7861357_1280.jpg" alt="Imagen 1" class="active">
+        <img src="../imgs/sky-2996551_1280.jpg" alt="Imagen 2">
+        <img src="../imgs/technology-7111796_1280.jpg" alt="Imagen 3">
+        
+        <!-- Controles del carrusel -->
+        <div class="carousel-controls">
+            <button class="control-button" onclick="prevImage()">&#10094;</button>
+            <button class="control-button" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dupla. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../JavaScript/script4.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+
+    <!-- Modal de carga -->
+    <div id="loading-modal" class="modal">
+        <div class="modal-content">
+            <p>Cargando, por favor espere...</p>
+        </div>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../JavaScript/script1.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+</body>
+</html>

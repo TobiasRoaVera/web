@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS3/style5.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1>
+    </header>
+    <a href="index1.html" class="back-button">Volver a Casa</a>
+
+    <main>
+        <form id="contact-form" onsubmit="return submitForm(event)">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="0[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="0XX-XXX-XXXX" required>
+                <small>Formato: 0XX-XXX-XXXX</small>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dupla. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../JavaScript/script5.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+
+    <!-- Modal de carga -->
+    <div id="loading-modal" class="modal">
+        <div class="modal-content">
+            <p>Cargando, por favor espere...</p>
+        </div>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../JavaScript/script1.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+</body>
+</html>

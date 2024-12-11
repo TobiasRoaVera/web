@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+}
+
+
+
+.title-container {
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px; /* Espaciado para el título */
+}
+
+nav {
+    background-color: #8B4513; /* Color marrón para el fondo del menú */
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente los elementos del nav */
+    padding: 15px 0; /* Aumentar la altura del nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen para que los elementos ocupen todo el ancho */
+    display: flex; /* Usar flexbox para alinear las opciones del menú */
+}
+
+nav ul li {
+    position: relative; /* Posicionamiento relativo para los bordes */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del menú */
+    text-decoration: none;
+    padding: 15px 15px; /* Espaciado interno para las opciones del menú */
+}
+
+/* Borde derecho en cada opción del menú */
+nav ul li:not(:last-child) {
+    border-right: 1px solid white; /* Borde vertical derecho simple y delgado */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo ligeramente más claro al pasar el mouse */
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Posiciona el pie de página al fondo */
+    left: 0; /* Alineación izquierda */
+    right: 0; /* Alineación derecha */
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar contenido */
+    background-color: white; /* Fondo blanco para el contenido */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+}
